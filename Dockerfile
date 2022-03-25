@@ -9,4 +9,4 @@ COPY . /var/www/
 RUN chown -R www-data:www-data /var/www
 RUN chmod 755 /usr/local/bin/start-apache
 
-CMD ["start-apache"]
+CMD ["/usr/local/bin/start-apache"]
